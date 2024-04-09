@@ -33,6 +33,6 @@ Meyvn offers are a curated set of templates, such as this one, that will you hel
 
 ** Credit
 
-Special thanks to James Reeves ([[https://github.com/ring-clojure/ring-websocket-transit][ring-websocket-transit]]) and Ning Sun ([[https://github.com/sunng87/ring-jetty9-adapter][rj9a]]).
+Special thanks to [[https://github.com/weavejester][James Reeves]] ([[https://github.com/ring-clojure/ring-websocket-transit][ring-websocket-transit]]) and [[https://github.com/sunng87][Ning Sun]] ([[https://github.com/sunng87/ring-jetty9-adapter][rj9a]]).
 
 I should note that the example is for exploratory use. In production, use [[https://github.com/taoensso/sente][Sente]].
