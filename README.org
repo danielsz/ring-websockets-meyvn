@@ -25,3 +25,14 @@ Meyvn offers are a curated set of templates, such as this one, that will you hel
 - Install [[https://danielsz.github.io/meyvn][Meyvn]].
 - Go to top of document.
 
+** Points of interest
+
+- Browsers don’t expose the Ping and Pong API defined in the WebSocket protocol. Web devs have to roll their own keepalive mechanism in the application layer. This example shows one possibility (sweet and short) of how to do that.
+- With Transit, Clojure data structures, instead of mere bytes or strings, can be exchanged on the socket. This opens the door for routing messages based on keys in maps, etc. Powerful stuff!
+
+
+** Credit
+
+Special thanks to James Reeves ([[https://github.com/ring-clojure/ring-websocket-transit][ring-websocket-transit]]) and Ning Sun ([[https://github.com/sunng87/ring-jetty9-adapter][rj9a]]).
+
+I should note that the example is for exploratory use. In production, use [[https://github.com/taoensso/sente][Sente]].
