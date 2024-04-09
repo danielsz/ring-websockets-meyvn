@@ -16,8 +16,8 @@ Meyvn offers are a curated set of templates, such as this one, that will you hel
 - Select one of the websocket templates
 - Go into the installation directory and open two terminals
 - Type ~myvn -a nrepl~ in one and in the other ~myvn -x cljs~
-- Connect to the nREPL in emacs (Alt+x meyvn-connect)
-- Launch the backend (Alt+x meyvn-system-go)
+- Connect to the nREPL in emacs (~alt+x meyvn-connect~)
+- Launch the backend (~alt+x meyvn-system-go~)
 - Direct browser to [[http://localhost:3085][http://localhost:3085]]
 
 ** Installation for non-Meyvn users
