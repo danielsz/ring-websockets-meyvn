@@ -12,7 +12,7 @@ Experimental support for WebSockets in Ring was added in 1.11.0-alpha1. This is 
 - Type ~myvn -a nrepl~ in one and in the other ~myvn -x cljs~
 - Connect to the nREPL in emacs (Alt+x meyvn-connect)
 - Launch the backend (Alt+x meyvn-system-go)
-- Open browser at http://localhost:3085  
+- Direct browser to [[http://localhost:3085][http://localhost:3085]]  
 
 ** Installation for non-Meyvn users
 
