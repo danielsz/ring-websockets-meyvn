@@ -4,6 +4,8 @@ Experimental support for WebSockets in Ring was added in 1.11.0-alpha1. This is 
 
 ** Installation
 
+#+HTML: <img src="meyvn.png"/>
+
 [[meyvn.png][Image of Meyvn]]
 ** 
 
