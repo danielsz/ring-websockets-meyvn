@@ -1,0 +1,70 @@
+{:pom {:group-id "org.danielsz",
+       :artifact-id "websockets",
+       :version "1.0.0",
+       :name "websockets"},
+ :packaging {:uberjar {:enabled true,
+                       :build-properties {:main-class "websockets.core"},
+                       :remote-repository {:id "ssh-repository",
+                                           :url "scpexe://user@domain:/home/.m2/repository"},
+                       :excludes {:artifacts ["org.clojure:google-closure-library"],
+                                  :filters ["META-INF/*.MF" "META-INF/*.SF" "META-INF/*.DSA" "META-INF/*.RSA"]}
+                       :include-source false,
+                       :obfuscation {:enabled false},
+                       :graalvm {:enabled false
+                                 :with-https false
+                                 :bin-name ""}
+                       :resources {:cljs {:enabled true,
+                                          :tools-deps-alias :cljs
+                                          :compiler-opts {:infer-externs true,
+                                                          :optimizations :advanced,
+                                                          :parallel-build true,
+                                                          :verbose false,
+                                                          :aot-cache true,
+                                                          :output-to "js/websockets.js",
+                                                          :output-wrapper true,
+                                                          :foreign-libs [],
+                                                          :main "websockets.core"}}
+                                   :css {:enabled false
+                                         :css-source-include "**"
+                                         :css-source-exclude "**/*.min.css"
+                                         :css-final-file "styles.css"
+                                         :web-app-source-dir "resources"
+                                         :css-source-dir "css"}
+                                   :images {:enabled false
+                                            :png {:dirs []}
+                                            :jpg {:dirs []}}}},
+             :jar {:enabled false,
+                   :remote-repository {:id "clojars", :url "https://clojars.org/repo"}}},
+ :testing {:enabled false, :tools-deps-alias :test},
+ :scm {:enabled false},
+ :interactive {:enabled true,
+               :reload-on-save true,
+               :tools-deps-alias :repl,
+               :repl-port :auto,
+               :repl-host "127.0.0.1",
+               :system {:enabled true
+                        :var "websockets.system/base"
+                        :restart-on-change ["handler.clj" "system.clj"]}
+               :figwheel-api {:enabled false
+                              :build-id "dev"}
+               :cljs {:enabled false,
+                      :with-repl false,
+                      :compiler-opts {:infer-externs true,
+                                      :output-dir "target/classes/js/compiled",
+                                      :optimizations :none,
+                                      :parallel-build true,
+                                      :verbose true,
+                                      :aot-cache true,
+                                      :output-to "target/classes/js/websockets.js",
+                                      :asset-path "/js/compiled",
+                                      :output-wrapper true,
+                                      :watch "src/cljs",
+                                      :source-map true,
+                                      :foreign-libs [],
+                                      :main "websockets.core"},
+                      :tools-deps-alias :cljs}}
+ :profiles {:enabled true
+            :development {:http-port "3085"}
+            :production {:http-port "8027"
+                         :repl-port "8028"
+                         :repl-ip "127.0.0.1"}}}

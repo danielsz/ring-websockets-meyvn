@@ -1,0 +1,20 @@
+<configuration>
+  <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+    <!-- encoders are assigned the type
+         ch.qos.logback.classic.encoder.PatternLayoutEncoder by default -->
+    <encoder>
+      <pattern>%d{HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n</pattern>
+    </encoder>
+  </appender>
+
+  <root level="debug">
+    <appender-ref ref="STDOUT" />
+  </root>
+
+  <logger name="io.netty" level="INFO"/>
+  <logger name="io.undertow" level="INFO"/>
+  <logger name="org.projectodd.wunderboss" level="INFO"/>
+  <logger name="org.xnio.nio" level ="INFO"/>
+  <logger name="org.apache" level ="INFO"/>
+  <logger name="org.eclipse" level="INFO"/>
+</configuration>

@@ -1,0 +1,26 @@
+{:paths ["src/clj"]
+ :deps {ring/ring-core {:mvn/version "1.12.1"}
+        org.ring-clojure/ring-websocket-protocols {:mvn/version "1.12.1"}
+        org.danielsz/ring-utils {:mvn/version "0.2.3"}
+        org.clojure/core.match {:mvn/version "1.1.0"}
+        org.clojure/core.async {:mvn/version "1.6.681"}
+        ring/ring-defaults {:mvn/version "0.4.0"}
+        metosin/muuntaja {:mvn/version "0.6.10"}
+        metosin/reitit {:mvn/version "0.7.0-alpha7"}
+        org.danielsz/system {:mvn/version "0.5.3"}
+        org.danielsz/jvm-utils {:mvn/version "0.1.2"}
+        cider/cider-nrepl {:mvn/version "0.47.1"}
+        nrepl/nrepl {:mvn/version "1.1.1"}
+        info.sunng/ring-jetty9-adapter {:mvn/version "0.32.4"}
+        org.clojure/tools.logging {:mvn/version "1.3.0"}
+        ch.qos.logback/logback-classic {:mvn/version "1.5.3"}}
+ :aliases {:cljs {:extra-deps {org.clojure/clojurescript {:mvn/version "1.11.132"}
+                               org.clojure/core.async {:mvn/version "1.6.681"}
+                               org.danielsz/cljs-utils {:mvn/version "0.1.6"}
+                               cljsjs/react {:mvn/version "18.2.0-1"}
+                               cljsjs/react-dom {:mvn/version "18.2.0-1"}}
+                  :extra-paths ["src/cljs"]}
+           :repl {:extra-deps {org.meyvn/nrepl-middleware {:mvn/version "1.3.5"}}}}}
+
+
+
