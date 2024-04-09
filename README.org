@@ -1,6 +1,12 @@
 * Websockets implemented via Ring's websocket protocol
 
-Experimental support for WebSockets in Ring was added in 1.11.0-alpha1. This is a fully fleshed example that shows how to piece everything together under Meyvn.
+Experimental support for WebSockets in Ring was added in 1.11.0-alpha1. This is a fully fleshed example that shows how to piece everything together. It is available as a template within Meyvn. This repository serves as reference only.
+
+** What are Meyvn templates?
+
+In the area of web development, specifically, there are a lot of moving parts. Things can go wrong. And often do at the beginning. Setting things up, preparing a build pipeline, etc. There is a real cost in starting a project. With a template, that friction can be reduced. Decisions that embody a design philosophy are embedded in the starting template. The user is guaranteed to start on solid ground.
+
+Meyvn offers are a curated set of templates, such as this one, that will you help you get started quickly.
 
 ** Installation for Meyvn users
 
@@ -12,7 +18,7 @@ Experimental support for WebSockets in Ring was added in 1.11.0-alpha1. This is 
 - Type ~myvn -a nrepl~ in one and in the other ~myvn -x cljs~
 - Connect to the nREPL in emacs (Alt+x meyvn-connect)
 - Launch the backend (Alt+x meyvn-system-go)
-- Direct browser to [[http://localhost:3085][http://localhost:3085]]  
+- Direct browser to [[http://localhost:3085][http://localhost:3085]]
 
 ** Installation for non-Meyvn users
 
